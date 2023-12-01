@@ -19,14 +19,15 @@
   left: 0;
 }
 
-.frame .group {
-  position: absolute;
+.frame .vuesax-linear-setting-wrapper {
+  position: fixed;
   width: 48px;
   height: 48px;
   top: 39px;
   left: 127px;
   background-color: #2a2c39;
   border-radius: 24px;
+  z-index: 99999;
 }
 
 .frame .img {
@@ -38,13 +39,14 @@
 }
 
 .frame .vuesax-linear-home-wrapper {
-  position: absolute;
+  position: fixed;
   width: 48px;
   height: 48px;
   top: 39px;
   left: 71px;
   background-color: #2a2c39;
   border-radius: 24px;
+  z-index: 99999;
 }
 
 .frame .rectangle {
@@ -260,6 +262,7 @@
   border-radius: 32px;
   border: 2px solid #000000; 
   transition: border-color 0.3s, box-shadow 0.3s; 
+  z-index: 9999;
 }
 
 .frame .frame-wrapper:hover {
@@ -419,4 +422,8 @@
   left: 89%;
   transform: translateX(-50%);
   transition: transform 0.3s ease-in-out; 
+}
+
+.nav{
+  position: absolute;
 }

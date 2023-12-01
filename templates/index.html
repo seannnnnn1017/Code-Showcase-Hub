@@ -49,12 +49,13 @@
                     </div>
                 </div>
             </div>
-            <div class="frame-wrapper">
+
+            <button class="frame-wrapper" onclick="scrollToBottom()">
                 <div class="div-2">
                     <img class="img-2" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-arrow-left.png" />
                     <div class="text-wrapper-5">Ravo-X</div>
                 </div>
-            </div>
+            </button>
             <div class="INFO">
                 <div class="div-3">
                     <img class="img-2" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-calendar.svg" />
@@ -119,29 +120,45 @@
         });
 
 
-        window.addEventListener('scroll', function () {
-            let scrollDistance = window.scrollY;
-            let pieChart = document.querySelector('.PIE-CHART');
+let pieChart = document.querySelector('.PIE-CHART');
+let isFixed = false;
 
-            // 获取视窗高度
-            let viewportHeight = window.innerHeight;
+function handleScroll() {
+  let scrollDistance = window.scrollY;
 
-            // 计算元素相对于视窗底部的距离
-            let distanceFromBottom = viewportHeight - (pieChart.getBoundingClientRect().top - scrollDistance);
-            console.log('distanceFromBottom:', distanceFromBottom);
-            // 如果元素底部即将超出视窗，调整元素位置
-            if (distanceFromBottom > 1892) {
-                document.querySelector('.PIE-CHART').style.position = 'fixed';
-                document.querySelector('.PIE-CHART').style.top = '-10%';
+  // 获取视窗高度
+  let viewportHeight = window.innerHeight;
 
-            } else {
-                // 恢复初始位置
-                document.querySelector('.PIE-CHART').style.position = 'absolute';
-                document.querySelector('.PIE-CHART').style.top = '623px';
-                document.querySelector('.PIE-CHART').style.left = '89%';
-            }
-        });
+  // 计算元素相对于视窗底部的距离
+  let distanceFromBottom = viewportHeight - (pieChart.getBoundingClientRect().top - scrollDistance);
 
+  // 如果元素底部即将超出视窗，调整元素位置
+  if (distanceFromBottom > 1800 && !isFixed) {
+    isFixed = true;
+    pieChart.classList.add('fixed');
+  } else if (distanceFromBottom <= 1800 && isFixed) {
+    // 恢复初始位置
+    isFixed = false;
+    pieChart.classList.remove('fixed');
+  }
+
+  // 使用 requestAnimationFrame 来持续监听滚动事件，优化性能
+  requestAnimationFrame(handleScroll);
+}
+
+// 初始监听滚动事件
+window.addEventListener('scroll', handleScroll);
+
+
+
+
+        function scrollToBottom() {
+            // Scroll to the bottom of the page
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth' // Add smooth scrolling effect
+            });
+        }
     </script>
 </body>
 

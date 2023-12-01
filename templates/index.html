@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="static\globals.css" />
+    <link rel="stylesheet" href="static\index_css\index.css" />
+</head>
+
+<body>
+    <div class="frame">
+        <div class="overlap">
+            <img class="IMG" src="https://c.animaapp.com/yK9rak1H/img/img.png" />
+            <div class="group"><img class="img" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-story.png" />
+            </div>
+            <div class="vuesax-linear-home-wrapper">
+                <img class="img" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-home-2.png" />
+            </div>
+            <div class="rectangle"></div>
+            <img class="about" src="https://c.animaapp.com/yK9rak1H/img/about@2x.png" />
+            <div class="overlap-wrapper">
+                <div class="overlap-group">
+                    <div class="div"></div>
+                    <div class="overlap-group-wrapper">
+                        <div class="overlap-group-2">
+                            <div class="text-wrapper">AI</div>
+                            <div class="text-wrapper-2">$529</div>
+                        </div>
+                    </div>
+                    <div class="div-wrapper">
+                        <div class="overlap-2">
+                            <div class="group-2">
+                                <div class="overlap-group-3">
+                                    <div class="text-wrapper-3">DL</div>
+                                    <div class="text-wrapper-4">$129</div>
+                                </div>
+                            </div>
+                            <img class="polygon" src="https://c.animaapp.com/yK9rak1H/img/polygon-2.svg" />
+                        </div>
+                    </div>
+                    <img class="group-3" src="https://c.animaapp.com/yK9rak1H/img/group-5.png" />
+                    <div class="HEAD">Projects</div>
+                    <div class="vuesax-linear-wrapper">
+                        <img class="vuesax-linear"
+                            src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-category.png" />
+                    </div>
+                    <div class="img-wrapper">
+                        <img class="vuesax-linear"
+                            src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-archive-tick.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="frame-wrapper">
+                <div class="div-2">
+                    <img class="img-2" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-arrow-left.png" />
+                    <div class="text-wrapper-5">Ravo-X</div>
+                </div>
+            </div>
+            <div class="INFO">
+                <div class="div-3">
+                    <img class="img-2" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-calendar.svg" />
+                    <p class="p">13:00 - 19:00, Oct 12 - 2023</p>
+                </div>
+                <div class="div-3">
+                    <img class="img-2" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-map.svg" />
+                    <p class="p">West Point St., Birmingham Dtr.</p>
+                </div>
+            </div>
+            <p class="BODY">
+                Hello there! I&#39;m Sean, a passionate and creative Artificial Intelligence Engineer.<br />With a solid
+                academic background in [Your Educational Background], I&#39;ve dedicated myself to the fascinating realm
+                of
+                artificial intelligence. My interests and expertise lie in machine learning, deep learning, and natural
+                language processing, allowing me to continuously challenge myself and provide innovative solutions to
+                real-world problems.
+            </p>
+            <img class="OKAY" src="https://c.animaapp.com/yK9rak1H/img/okay.png" />
+            <div class="SOCIAL">
+                <div class="image-wrapper"><img class="image" src="https://c.animaapp.com/yK9rak1H/img/image-2.png" />
+                </div>
+                <div class="vuesax-linear-paypal-wrapper">
+                    <img class="vuesax-linear-paypal"
+                        src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-paypal-1.png" />
+                </div>
+                <div class="vuesax-linear-apple-wrapper">
+                    <img class="vuesax-linear-apple"
+                        src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-apple-1.png" />
+                </div>
+            </div>
+            <img class="PIE-CHART" src="https://c.animaapp.com/yK9rak1H/img/pie-chart.png" />
+        </div>
+    </div>
+
+
+
+    <script>
+        // 監聽滾動事件
+        window.addEventListener('scroll', function () {
+            // 獲取視窗高度
+            let viewportHeight = window.innerHeight;
+
+            // 獲取文檔高度
+            let documentHeight = Math.max(
+                document.body.scrollHeight, document.documentElement.scrollHeight,
+                document.body.offsetHeight, document.documentElement.offsetHeight,
+                document.body.clientHeight, document.documentElement.clientHeight
+            );
+
+            // 計算可滾動的總距離
+            let scrollableDistance = documentHeight - viewportHeight;
+
+            // 計算滾動比例
+            let scrollRatio = window.scrollY / scrollableDistance;
+
+            // 將旋轉角度應用到圖表上，根據滾動比例轉換為特定的角度
+            let rotateAngle = 140.95 * scrollRatio;
+
+            // 將旋轉應用到圖表上
+            document.querySelector('.PIE-CHART').style.transform = `translateX(-50%) rotate(${rotateAngle}deg)`;
+        });
+
+
+        window.addEventListener('scroll', function () {
+            let scrollDistance = window.scrollY;
+            let pieChart = document.querySelector('.PIE-CHART');
+
+            // 获取视窗高度
+            let viewportHeight = window.innerHeight;
+
+            // 计算元素相对于视窗底部的距离
+            let distanceFromBottom = viewportHeight - (pieChart.getBoundingClientRect().top - scrollDistance);
+            console.log('distanceFromBottom:', distanceFromBottom);
+            // 如果元素底部即将超出视窗，调整元素位置
+            if (distanceFromBottom > 1892) {
+                document.querySelector('.PIE-CHART').style.position = 'fixed';
+                document.querySelector('.PIE-CHART').style.top = '-10%';
+
+            } else {
+                // 恢复初始位置
+                document.querySelector('.PIE-CHART').style.position = 'absolute';
+                document.querySelector('.PIE-CHART').style.top = '623px';
+                document.querySelector('.PIE-CHART').style.left = '89%';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

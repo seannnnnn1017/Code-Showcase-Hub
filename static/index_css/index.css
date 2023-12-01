@@ -1,0 +1,410 @@
+.frame {
+  width: 100%;
+  height: 2000px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.frame .overlap {
+  position: relative;
+  width: 1959px;
+  height: 1376px;
+}
+
+.frame .IMG {
+  position: fixed;
+  width: 1375px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+}
+
+.frame .group {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 39px;
+  left: 127px;
+  background-color: #2a2c39;
+  border-radius: 24px;
+}
+
+.frame .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 12px;
+}
+
+.frame .vuesax-linear-home-wrapper {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 39px;
+  left: 71px;
+  background-color: #2a2c39;
+  border-radius: 24px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 283px;
+  left: 0;
+  background-color: #0b0c10;
+  border-radius: 108px;
+}
+
+.frame .about {
+  position: absolute;
+  width: 212px;
+  height: 56px;
+  top: 390px;
+  left: 83px;
+}
+
+.frame .overlap-wrapper {
+  position: absolute;
+  width: 410px;
+  height: 596px;
+  top: 30px;
+  left: 1524px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  width: 408px;
+  height: 596px;
+  background-color: #0b0c10;
+  border-radius: 108px;
+}
+
+.frame .div {
+  position: absolute;
+  width: 382px;
+  height: 532px;
+  top: 9px;
+  left: 15px;
+  background-color: #111218;
+  border-radius: 100px;
+}
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  width: 314px;
+  height: 291px;
+  top: 113px;
+  left: 49px;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  width: 310px;
+  height: 291px;
+  background-color: #bbff1a;
+  border-radius: 64px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 21px;
+  left: 47px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #0b0c10;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  top: 21px;
+  left: 227px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #0b0c10;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 344px;
+  height: 331px;
+  top: 148px;
+  left: 32px;
+}
+
+.frame .overlap-2 {
+  position: relative;
+  width: 348px;
+  height: 330px;
+  top: 1px;
+}
+
+.frame .group-2 {
+  position: absolute;
+  width: 348px;
+  height: 322px;
+  top: 8px;
+  left: 0;
+}
+
+.frame .overlap-group-3 {
+  position: relative;
+  width: 344px;
+  height: 322px;
+  background-image: url(https://c.animaapp.com/doGfkCbV/img/rectangle-3.svg);
+  background-size: 100% 100%;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 24px;
+  left: 63px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 32px;
+  left: 269px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .polygon {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  top: 0;
+  left: 164px;
+}
+
+.frame .group-3 {
+  position: absolute;
+  width: 382px;
+  height: 339px;
+  top: 202px;
+  left: 13px;
+}
+
+.frame .HEAD {
+  position: absolute;
+  width: 280px;
+  top: 46px;
+  left: 75px;
+  font-family: "Outfit-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vuesax-linear-wrapper {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 46px;
+  left: 264px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .vuesax-linear {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.frame .img-wrapper {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 46px;
+  left: 308px;
+  background-color: #2a2c39;
+  border-radius: 28px;
+}
+
+.frame .frame-wrapper {
+  position: absolute;
+  width: 201px;
+  height: 75px;
+  top: 257px;
+  left: 207px;
+  background-color: #000000;
+  border-radius: 32px;
+}
+
+.frame .div-2 {
+  top: 26px;
+  left: 31px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .img-2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Outfit-Thin", Helvetica;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.frame .INFO {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 780px;
+  left: 79px;
+}
+
+.frame .div-3 {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .p {
+  position: relative;
+  width: 216px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #999cba;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .BODY {
+  position: absolute;
+  width: 533px;
+  top: 495px;
+  left: 79px;
+  font-family: "Outfit-Regular", Helvetica;
+  font-weight: 400;
+  color: #999cba;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.frame .OKAY {
+  position: fixed;
+  width: 517px;
+  height: 745px;
+  top: 83px;
+  left: 742px;
+}
+
+.frame .SOCIAL {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 803px;
+  left: 926px;
+  position: fixed;
+}
+
+.frame .image-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .image {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 14px;
+  left: 14px;
+  object-fit: cover;
+}
+
+.frame .vuesax-linear-paypal-wrapper {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  margin-left: -8px;
+  background-color: #2a2c39;
+  border-radius: 26.5px;
+}
+
+.frame .vuesax-linear-paypal {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+  left: 15px;
+}
+
+.frame .vuesax-linear-apple-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin-left: -8px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .vuesax-linear-apple {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 15px;
+  left: 16px;
+}
+
+.frame .PIE-CHART {
+  position: absolute;
+  width: 241px;
+  height: 241px;
+  top: 623px;
+  left: 89%;
+  transform: translateX(-50%); /* 調整圖表位置 */
+  transition: transform 0.1s ease-in-out; /* 加入過渡效果 */
+}
+
+

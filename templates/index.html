@@ -87,7 +87,13 @@
                         src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-apple-1.png" />
                 </div>
             </div>
-            <img class="PIE-CHART" src="https://c.animaapp.com/yK9rak1H/img/pie-chart.png" />
+            <div class="PIE-CHART" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="241" height="241" fill="none" viewBox="0 0 241 241">
+                    <path fill="#282A36" d="M217 120.5c13.255 0 24.24 10.849 21.618 23.842a120.505 120.505 0 0 1-131.536 95.909A120.505 120.505 0 0 1 6.803 160.416 120.5 120.5 0 0 1 70.791 10.731c12.074-5.468 25.11 2.806 28.08 15.724l17.347 75.424a23.999 23.999 0 0 0 23.389 18.621H217Z"/>
+                    <path fill="#BBFF1A" d="M207.166 85.193c10.599-2.868 17.059-14.006 12.178-23.93a100.53 100.53 0 0 0-28.616-35.111 99.304 99.304 0 0 0-40.99-18.826C138.982 5.133 130 14.318 130 25.399v54.526c0 13.193 12.392 22.795 25.011 19.38l52.155-14.112Z"/>
+                  </svg>
+            </div>
+            </div>
         </div>
     </div>
 
@@ -134,12 +140,13 @@
             if (distanceFromBottom > 1800) {
                 document.querySelector('.PIE-CHART').style.position = 'fixed';
                 document.querySelector('.PIE-CHART').style.top = '-10%';
+                document.querySelector('.PIE-CHART').style.left ='89%';
 
             } else {
                 // 恢复初始位置
                 document.querySelector('.PIE-CHART').style.position = 'absolute';
                 document.querySelector('.PIE-CHART').style.top = '623px';
-
+                document.querySelector('.PIE-CHART').style.left ='89%';
             }
         });
 

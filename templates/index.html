@@ -120,35 +120,28 @@
         });
 
 
-let pieChart = document.querySelector('.PIE-CHART');
-let isFixed = false;
+        window.addEventListener('scroll', function () {
+            let scrollDistance = window.scrollY;
+            let pieChart = document.querySelector('.PIE-CHART');
 
-function handleScroll() {
-  let scrollDistance = window.scrollY;
+            // 获取视窗高度
+            let viewportHeight = window.innerHeight;
 
-  // 获取视窗高度
-  let viewportHeight = window.innerHeight;
+            // 计算元素相对于视窗底部的距离
+            let distanceFromBottom = viewportHeight - (pieChart.getBoundingClientRect().top - scrollDistance);
+            console.log('distanceFromBottom:', distanceFromBottom);
+            // 如果元素底部即将超出视窗，调整元素位置
+            if (distanceFromBottom > 1800) {
+                document.querySelector('.PIE-CHART').style.position = 'fixed';
+                document.querySelector('.PIE-CHART').style.top = '-10%';
 
-  // 计算元素相对于视窗底部的距离
-  let distanceFromBottom = viewportHeight - (pieChart.getBoundingClientRect().top - scrollDistance);
+            } else {
+                // 恢复初始位置
+                document.querySelector('.PIE-CHART').style.position = 'absolute';
+                document.querySelector('.PIE-CHART').style.top = '623px';
 
-  // 如果元素底部即将超出视窗，调整元素位置
-  if (distanceFromBottom > 1800 && !isFixed) {
-    isFixed = true;
-    pieChart.classList.add('fixed');
-  } else if (distanceFromBottom <= 1800 && isFixed) {
-    // 恢复初始位置
-    isFixed = false;
-    pieChart.classList.remove('fixed');
-  }
-
-  // 使用 requestAnimationFrame 来持续监听滚动事件，优化性能
-  requestAnimationFrame(handleScroll);
-}
-
-// 初始监听滚动事件
-window.addEventListener('scroll', handleScroll);
-
+            }
+        });
 
 
 

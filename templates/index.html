@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="static\globals.css" />
     <link rel="stylesheet" href="static\index_css\index.css" />
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -81,6 +83,50 @@
             <div class="OKAY">
                 <img class="Character" src="static\index_image\CHARACTER.png" />
                 <img class="CharacterBack" src="static\index_image\OKAY.png" />
+                <div class="Sup" data-aos="zoom-in">
+                    <div class="Fbutton">
+                        <div class="Sup7"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\color-swatch.png" alt="">
+                        </div>
+                        <div class="MemberIdentity">Member Identity</div>
+                    </div>
+                    <div class="Ebutton">
+                        <div class="Sup6"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\music-square.png" alt="">
+                        </div>
+                        <div class="NcsMusic">NCS Music</div>
+                    </div>
+                    <div class="Dbutton">
+                        <div class="Sup5"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\award.png" alt="">
+                        </div>
+                        <div class="Certificate">Certificate</div>
+                    </div>
+                    <div class="Cbutton">
+                        <div class="Sup4"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\note-2.png" alt="">
+                        </div>
+                        <div class="Merchandise">Merchandise</div>
+                    </div>
+                    <div class="Bbutton">
+                        <div class="Sup3"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\flash.png" alt="">
+                        </div>
+                        <div class="Dance">Dance</div>
+                    </div>
+                    <div class="Abutton">
+                        <div class="Sup2"></div>
+                        <div class="VuesaxBoldDiscover">
+                            <img src="static\index_image\discover.png" alt="">
+                        </div>
+                        <div class="DjChallenges">DJ Challenges</div>
+                    </div>
+                </div>
             </div>
             <div class="SOCIAL">
                 <div class="image-wrapper"><img class="image" src="https://c.animaapp.com/yK9rak1H/img/image-2.png" />
@@ -108,7 +154,11 @@
                 </svg>
             </div>
         </div>
+
     </div>
+
+
+
     </div>
 
 
@@ -122,6 +172,19 @@
 
 
             let scrollDistance = window.scrollY;
+
+            let sup=document.getElementsByClassName('Sup');
+            
+
+
+
+
+
+
+
+
+
+
             let pieChart = document.getElementById('mySvgContainer');
             let scrollButton = document.querySelector('.frame-wrapper');
             let buttonIcon = document.querySelector('.img-2');
@@ -174,28 +237,22 @@
             let maxWidth = 1454.09;
             let maxHeight = 1486.36;
 
-            // 设置最小和最大的top值
             let minTop = 55;
             let maxTop = 45;
 
-            // 计算缩放比例和top值
             let Ascale = 1 - scrollDistance / (document.body.scrollHeight - window.innerHeight);
             let topValue = minTop + Ascale * (maxTop - minTop);
 
-            // 计算缩放比例
             let Awidth = IMGminWidth + Ascale * (IMGmaxWidth - IMGminWidth);
             let Aheight = IMGminHeight + Ascale * (IMGmaxHeight - IMGminHeight);
 
-            // 设置新的宽度、高度和top值
             character.style.width = Awidth + 'px';
             character.style.height = Aheight + 'px';
             character.style.top = topValue + '%';
-            // 根据缩放比例调整宽度和高度
             let scale = scrollDistance / (document.body.scrollHeight - window.innerHeight);
             let width = minWidth + scale * (maxWidth - minWidth);
             let height = minHeight + scale * (maxHeight - minHeight);
 
-            // 设置新的宽度和高度
             characterBack.style.width = width + 'px';
             characterBack.style.height = height + 'px';
         });
@@ -227,6 +284,10 @@
         }
 
     </script>
+      
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

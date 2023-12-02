@@ -10,6 +10,12 @@ font-family: 'Nico Moji';
   overflow: hidden;
 }
 
+@media only screen and (max-width: 900px) {
+  .frame {
+    height: 3000px;
+  }
+}
+
 .frame .overlap {
   position: relative;
   width: 1959px;
@@ -480,3 +486,138 @@ nav {
   font-weight: 400;
   word-wrap: break-word
 }
+
+.Sup {
+  width: 1735px;
+  height: 590px;
+  position: absolute;
+  display: flex;
+  left: calc(50% - 897px);
+  top: 90%}
+
+.Fbutton,
+.Ebutton,
+.Dbutton,
+.Cbutton,
+.Bbutton,
+.Abutton {
+  position: absolute;
+}
+
+.Fbutton {
+  width: 150px;
+  height: 186px;
+  left: 1585px;
+  top: 404px;
+}
+
+.Ebutton {
+  width: 150px;
+  height: 201px;
+  left: 1577px;
+  top: 201px;
+}
+
+.Dbutton {
+  width: 150px;
+  height: 178px;
+  left: 1577px;
+  top: 0px;
+}
+
+.Cbutton {
+  width: 150px;
+  height: 186px;
+  left: 0px;
+  top: 404px;
+}
+
+.Bbutton {
+  width: 150px;
+  height: 182px;
+  left: 0px;
+  top: 202px;
+}
+
+.Abutton {
+  width: 150px;
+  height: 178px;
+  left: 0px;
+  top: 0px;
+}
+
+.Sup7,
+.Sup6,
+.Sup5,
+.Sup4,
+.Sup3,
+.Sup2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: #1E1F29;
+  border-radius: 9999px;
+}
+
+.VuesaxBoldDiscover {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 51px;
+  top: 53px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.VuesaxBoldDiscover img {
+  width: 100%;
+  height: 100%;
+}
+
+.MemberIdentity,
+.NcsMusic,
+.Certificate,
+.Merchandise,
+.Dance,
+.DjChallenges {
+  position: absolute;
+  text-align: center;
+  color: #999DBA;
+  font-size: 14px;
+  font-family: Outfit;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.MemberIdentity {
+  left: 22px;
+  top: 168px;
+}
+
+.NcsMusic {
+  left: 45px;
+  top: 183px;
+}
+
+.Certificate {
+  left: 45px;
+  top: 160px;
+}
+
+.Merchandise {
+  left: 35px;
+  top: 168px;
+}
+
+.Dance {
+  left: 55px;
+  top: 164px;
+}
+
+.DjChallenges {
+  left: 31px;
+  top: 160px;
+}
+
+

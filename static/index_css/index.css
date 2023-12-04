@@ -1,0 +1,785 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+body{
+font-family: 'Nico Moji';
+}
+
+.frame {
+  width: 100%;
+  height: 2000px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .frame {
+    height: 3000px;
+  }
+}
+
+.frame .overlap {
+  position: relative;
+  width: 1959px;
+  height: 1376px;
+}
+
+.frame .IMG {
+  position: fixed;
+  width: 1375px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+}
+
+.frame .vuesax-linear-setting-wrapper {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  top: 39px;
+  left: 127px;
+  background-color: #2a2c39;
+  border-radius: 24px;
+  z-index: 99999;
+}
+
+.frame .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 12px;
+}
+
+.frame .vuesax-linear-home-wrapper {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  top: 39px;
+  left: 71px;
+  background-color: #2a2c39;
+  border-radius: 24px;
+  z-index: 99999;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 283px;
+  left: 0;
+  background-color: #0b0c10;
+  border-radius: 108px;
+}
+
+.frame .about {
+  position: absolute;
+  width: 212px;
+  height: 56px;
+  top: 390px;
+  left: 83px;
+}
+
+.frame .overlap-wrapper {
+  position: absolute;
+  width: 410px;
+  height: 596px;
+  top: 30px;
+  left: 1524px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  width: 408px;
+  height: 596px;
+  background-color: #0b0c10;
+  border-radius: 108px;
+}
+
+.frame .div {
+  position: absolute;
+  width: 382px;
+  height: 532px;
+  top: 9px;
+  left: 15px;
+  background-color: #111218;
+  border-radius: 100px;
+}
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  width: 314px;
+  height: 291px;
+  top: 113px;
+  left: 49px;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  width: 310px;
+  height: 291px;
+  background-color: #bbff1a;
+  border-radius: 64px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 21px;
+  left: 47px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #0b0c10;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  top: 21px;
+  left: 227px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #0b0c10;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 344px;
+  height: 331px;
+  top: 148px;
+  left: 32px;
+}
+
+.frame .overlap-2 {
+  position: relative;
+  width: 348px;
+  height: 330px;
+  top: 1px;
+}
+
+.frame .group-2 {
+  position: absolute;
+  width: 348px;
+  height: 322px;
+  top: 8px;
+  left: 0;
+}
+
+.frame .overlap-group-3 {
+  position: relative;
+  width: 344px;
+  height: 322px;
+  background-image: url(https://c.animaapp.com/doGfkCbV/img/rectangle-3.svg);
+  background-size: 100% 100%;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 24px;
+  left: 63px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 32px;
+  left: 269px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .polygon {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  top: 0;
+  left: 164px;
+}
+
+.frame .group-3 {
+  position: absolute;
+  width: 382px;
+  height: 339px;
+  top: 202px;
+  left: 13px;
+}
+
+.frame .HEAD {
+  position: absolute;
+  width: 280px;
+  top: 46px;
+  left: 75px;
+  font-family: "Outfit-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .vuesax-linear-wrapper {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 46px;
+  left: 264px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .vuesax-linear {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.frame .img-wrapper {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 46px;
+  left: 308px;
+  background-color: #2a2c39;
+  border-radius: 28px;
+}
+
+.frame .frame-wrapper {
+  position: absolute;
+  width: 201px;
+  height: 75px;
+  top: 257px;
+  left: 207px;
+  background-color: #000000;
+  border-radius: 32px;
+  border: 2px solid #000000;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  z-index: 9999;
+}
+
+.frame .frame-wrapper:hover {
+  border-color: #ffffff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.frame .div-2 {
+  top: auto;
+  left: -4%;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .img-2 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Outfit-Thin", Helvetica;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.frame .INFO {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: absolute;
+  top: 780px;
+  left: 79px;
+}
+
+.frame .div-3 {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .p {
+  position: relative;
+  width: 216px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #999cba;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .BODY {
+  position: absolute;
+  width: 533px;
+  top: 495px;
+  left: 79px;
+  font-family: "Outfit-Regular", Helvetica;
+  font-weight: 400;
+  color: #999cba;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.frame .Character {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(100%);
+  transition: width 0.5s, height 0.5s; 
+  z-index: 1;
+}
+
+.frame .CharacterBack{
+  position: fixed;
+  top: 45%;
+  left: 47%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  filter: grayscale(100%);
+  transition: width 0.5s, height 0.5s; 
+  
+}
+
+.frame .SOCIAL {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 80%;
+  left: 46%;
+  position: fixed;
+  z-index: 2;
+}
+
+.frame .image-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .image {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 14px;
+  left: 14px;
+  object-fit: cover;
+}
+
+.frame .vuesax-linear-paypal-wrapper {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  margin-left: -8px;
+  background-color: #2a2c39;
+  border-radius: 26.5px;
+}
+
+.frame .vuesax-linear-paypal {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 14px;
+  left: 15px;
+}
+
+.frame .vuesax-linear-apple-wrapper {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin-left: -8px;
+  background-color: #0b0c10;
+  border-radius: 28px;
+}
+
+.frame .vuesax-linear-apple {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 15px;
+  left: 16px;
+}
+
+.frame .PIE-CHART {
+  position: absolute;
+  top: 623px;
+  left: 89%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.frame .PIE-CHART.fixed {
+  position: fixed;
+  top: -10%;
+
+  left: 89%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav {
+  position: fixed;
+  width: 700px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  /* ?整模糊程度，可以根据需要修改?值 */
+  z-index: 99;
+
+}
+.NameContainer{
+  align-items: center;
+  position: absolute;
+  top: 64%;
+  left: calc(50% - 97px);
+  position: fixed;
+  z-index: 3;
+}
+.Name1 {
+  text-align: center;
+  color: white;
+  font-size: 64px;
+  font-family: Nico Moji;
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.Name2 {
+  text-align: center;
+  color: #BBFF1A;
+  font-size: 64px;
+  font-family: Nico Moji;
+  font-weight: 400;
+  word-wrap: break-word
+}
+
+.Sup {
+  width: 1735px;
+  height: 590px;
+  position: absolute;
+  display: flex;
+  left: calc(50% - 897px);
+  top: 90%}
+
+.Fbutton,
+.Ebutton,
+.Dbutton,
+.Cbutton,
+.Bbutton,
+.Abutton {
+  position: absolute;
+}
+
+.Fbutton {
+  width: 150px;
+  height: 186px;
+  left: 1585px;
+  top: 404px;
+}
+
+.Ebutton {
+  width: 150px;
+  height: 201px;
+  left: 1577px;
+  top: 201px;
+}
+
+.Dbutton {
+  width: 150px;
+  height: 178px;
+  left: 1577px;
+  top: 0px;
+}
+
+.Cbutton {
+  width: 150px;
+  height: 186px;
+  left: 0px;
+  top: 404px;
+}
+
+.Bbutton {
+  width: 150px;
+  height: 182px;
+  left: 0px;
+  top: 202px;
+}
+
+.Abutton {
+  width: 150px;
+  height: 178px;
+  left: 0px;
+  top: 0px;
+}
+
+.Sup7,
+.Sup6,
+.Sup5,
+.Sup4,
+.Sup3,
+.Sup2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: #1E1F29;
+  border-radius: 9999px;
+}
+
+.VuesaxBoldDiscover {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 51px;
+  top: 53px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.VuesaxBoldDiscover img {
+  width: 100%;
+  height: 100%;
+}
+
+.MemberIdentity,
+.NcsMusic,
+.Certificate,
+.Merchandise,
+.Dance,
+.DjChallenges {
+  position: absolute;
+  text-align: center;
+  color: #999DBA;
+  font-size: 14px;
+  font-family: Outfit;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.MemberIdentity {
+  left: 22px;
+  top: 168px;
+}
+
+.NcsMusic {
+  left: 45px;
+  top: 183px;
+}
+
+.Certificate {
+  left: 45px;
+  top: 160px;
+}
+
+.Merchandise {
+  left: 35px;
+  top: 168px;
+}
+
+.Dance {
+  left: 55px;
+  top: 164px;
+}
+
+.DjChallenges {
+  left: 31px;
+  top: 160px;
+}
+
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 382px;
+  height: 339px;
+  margin: 0 auto;
+  top: 210px;
+}
+.polygon11 {
+  position: relative;
+  width: 23px;
+  height: 14px;
+  margin: 0 0 0 179px;
+
+  z-index: 13;
+  border-radius: 2px;
+}
+.auto-layer-row {
+  position: relative;
+  width: 278px;
+  height: 148px;
+  margin: 58px 0 0 51px;
+  z-index: 2;
+}
+.frame11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 32px;
+  position: absolute;
+  width: 151px;
+  height: 148px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.number-of-projects {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 151px;
+  min-width: 0;
+  height: 60px;
+  font-family: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30.24px;
+  text-align: left;
+  z-index: 3;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 16px;
+  position: relative;
+  min-width: 0;
+  z-index: 4;
+}
+.last-update-time {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  font-family: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(153, 157, 186);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  z-index: 5;
+}
+.november {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 20px;
+  font-family: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(153, 157, 186);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  z-index: 6;
+}
+.image11 {
+  position: absolute;
+  width: 105px;
+  height: 111px;
+  top: 0;
+  left: 173px;
+  background-size: cover;
+  z-index: 1;
+}
+.rectangle11 {
+  position: relative;
+  width: 280px;
+  height: 82px;
+  margin: 8px 0 0 51px;
+  background: rgb(11, 12, 16);
+  z-index: 8;
+  border-radius: 100px;
+}
+.arrow-right {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 30px;
+  left: 224px;
+  background: './static/index_image/image1.png';
+  background-size: 100% 100%;
+  z-index: 11;
+}
+.span-25 {
+  position: absolute;
+  height: 19px;
+  top: 31px;
+  left: 37px;
+  font-family: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 19px;
+  text-align: left;
+  z-index: 12;
+}
+.Rectangle11 {
+  position: absolute;
+  width: 382px;
+  height: 334px;
+  top: 5px;
+  left: 0;
+  background: './static/index_image/643656aec9a1d5f30915a0c9938ff0b006ee33d6.png';
+  background-size: cover;
+}

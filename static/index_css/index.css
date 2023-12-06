@@ -10,9 +10,18 @@ font-family: 'Nico Moji';
   overflow: hidden;
 }
 
-@media only screen and (max-width: 900px) {
-  .frame {
+@media only screen and (max-width: 1500px) {
+  .frame{
     height: 3000px;
+  }
+  .overlap-group{
+    display: none;
+  }
+  .PIE-CHART{
+    display: none;
+  }
+  .OKAY{
+    display: none;
   }
 }
 
@@ -41,6 +50,11 @@ font-family: 'Nico Moji';
   z-index: 99999;
 }
 
+.frame .vuesax-linear-setting-wrapper:hover,
+.frame .vuesax-linear-setting-wrapper:focus{
+  background-color: #bbff1a;
+}
+
 .frame .img {
   position: absolute;
   width: 24px;
@@ -59,7 +73,10 @@ font-family: 'Nico Moji';
   border-radius: 24px;
   z-index: 99999;
 }
-
+.frame .vuesax-linear-home-wrapper:hover,
+.frame .vuesax-linear-home-wrapper:focus{
+  background-color: #bbff1a;
+}
 .frame .rectangle {
   position: absolute;
   width: 100%;

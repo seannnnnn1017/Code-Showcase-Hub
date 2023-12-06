@@ -14,12 +14,12 @@
         <div class="overlap">
             <img class="IMG" src="https://c.animaapp.com/yK9rak1H/img/img.png" />
             <nav>
-                <div class="vuesax-linear-setting-wrapper"><img class="img"
+                <a class="vuesax-linear-setting-wrapper" href="#"><img class="img"
                         src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-story.png" />
-                </div>
-                <div class="vuesax-linear-home-wrapper">
+                </a>
+                <a class="vuesax-linear-home-wrapper" href="./">
                     <img class="img" src="https://c.animaapp.com/yK9rak1H/img/vuesax-linear-home-2.png" />
-                </div>
+                </a>
             </nav>
             <div class="rectangle"></div>
             <img class="about" src="https://c.animaapp.com/yK9rak1H/img/about@2x.png" />
@@ -249,12 +249,6 @@
             let IMGminHeight = 595;
             let IMGmaxWidth = 517;
             let IMGmaxHeight = 745;
-
-            let minWidth = 0;
-            let minHeight = 0;
-            let maxWidth = 1454.09;
-            let maxHeight = 1486.36;
-
             let minTop = 55;
             let maxTop = 45;
 
@@ -267,12 +261,19 @@
             character.style.width = Awidth + 'px';
             character.style.height = Aheight + 'px';
             character.style.top = topValue + '%';
+
+
+
+            let minWidth = 0;
+            let minHeight = 0;
+            let maxWidth = 74;
+            let maxHeight = 130;
             let scale = scrollDistance / (document.body.scrollHeight - window.innerHeight);
             let width = minWidth + scale * (maxWidth - minWidth);
             let height = minHeight + scale * (maxHeight - minHeight);
 
-            characterBack.style.width = width + 'px';
-            characterBack.style.height = height + 'px';
+            characterBack.style.width = width + '%';
+            characterBack.style.height = height + '%';
         });
 
 

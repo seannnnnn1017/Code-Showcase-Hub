@@ -800,3 +800,7 @@ nav {
   background: './static/index_image/643656aec9a1d5f30915a0c9938ff0b006ee33d6.png';
   background-size: cover;
 }
+
+.Sup aos-init aos-animate{
+  left: 10%;
+}

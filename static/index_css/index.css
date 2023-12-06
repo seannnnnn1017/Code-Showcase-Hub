@@ -18,7 +18,7 @@ font-family: 'Nico Moji';
 
 .frame .overlap {
   position: relative;
-  width: 1959px;
+  width: 100%;
   height: 1376px;
 }
 
@@ -83,7 +83,7 @@ font-family: 'Nico Moji';
   width: 410px;
   height: 596px;
   top: 30px;
-  left: 1524px;
+  left: 77%;
 }
 
 .frame .overlap-group {
@@ -457,7 +457,7 @@ nav {
   top: 0;
   left: 0;
   backdrop-filter: blur(5px);
-  /* ?¾ã¼Ò½kµ{«×¡A¥i¥H®ÚÕu»Ý­n­×§ï?­È */
+  /* ?ï¿½ï¿½Ò½kï¿½{ï¿½×¡Aï¿½iï¿½Hï¿½ï¿½ï¿½uï¿½Ý­nï¿½×§ï¿½?ï¿½ï¿½ */
   z-index: 99;
 
 }

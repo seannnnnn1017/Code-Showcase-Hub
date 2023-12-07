@@ -366,6 +366,10 @@ body {
   z-index: 1;
 }
 
+.frame .Character_phone{
+  display: block;
+}
+
 .frame .CharacterBack {
   position: fixed;
   top: 45%;
@@ -381,7 +385,6 @@ body {
 .frame .SOCIAL {
   display: inline-flex;
   align-items: center;
-  position: absolute;
   top: 80%;
   left: 46%;
   position: fixed;
@@ -823,7 +826,7 @@ nav {
     height: 596px;
     background-color: #0b0c10;
     border-radius: 108px;
-    top: 400px;
+    top: 450px;
     left: -50%;
   }
 
@@ -831,9 +834,23 @@ nav {
     display: none;
   }
 
-  .OKAY {
+  .frame .Character {
     display: none;
+
   }
+  .frame .CharacterBack {
+    display: none;
+
+  }
+  
+  .frame .Character_phone {
+    top: 1500px;
+    left: 280px;
+    height: 626px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position: absolute;
+}
 
   .NameContainer {
     align-items: center;
@@ -874,4 +891,20 @@ nav {
     top: 930px;
     left: 79px;
   }
+
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.frame .SOCIAL  {
+  left: 200px;
+  position: absolute;
+  top: 1750px;
+}
 }

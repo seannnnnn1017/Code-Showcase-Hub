@@ -355,14 +355,16 @@ body {
   letter-spacing: 0;
   line-height: 32px;
 }
-.frame .Contact{
- top: 1500px;
- position: absolute;
- left: 44%;
-}
-.frame .Contact svg{
+
+.frame .Contact {
+  top: 1500px;
   position: absolute;
-    top: -400px;
+  left: 44%;
+}
+
+.frame .Contact svg {
+  position: absolute;
+  top: -400px;
 }
 
 .frame .code_hub {
@@ -373,6 +375,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .frame .Character {
   position: fixed;
   top: 44%;
@@ -383,7 +386,11 @@ body {
   z-index: 1;
 }
 
-.frame .Character_phone{
+.frame .Character_phone {
+  display: none;
+}
+
+.frame .Character_phoneBack {
   display: none;
 }
 
@@ -828,6 +835,129 @@ nav {
   left: 10%;
 }
 
+.phone_button {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.phone_button .Adiv-2 {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 300px 0px 0px
+}
+
+.phone_button .Aimg {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.phone_button .Adiv-3 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: nowrap;
+  font: 500 8px Outfit, sans-serif;
+  white-space: initial;
+}
+
+.phone_button .Aimg-2 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.phone_button .Adiv-4 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: initial;
+  font: 500 8px Outfit, sans-serif;
+}
+
+.phone_button .Aimg-3 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.phone_button .Adiv-5 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: initial;
+  font: 500 8px Outfit, sans-serif;
+}
+
+.phone_button .Adiv-6 {
+  align-self: start;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 300px;
+}
+
+.phone_button .Adiv-7 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: initial;
+  font: 500 8px Outfit, sans-serif;
+}
+
+.phone_button .Aimg-4 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 39px;
+}
+
+.phone_button .Adiv-8 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: initial;
+  font: 500 8px Outfit, sans-serif;
+}
+
+.phone_button .Aimg-5 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 82px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 36px;
+}
+
+.phone_button .Adiv-9 {
+  color: #999dba;
+  text-align: center;
+  margin-top: 15px;
+  white-space: initial;
+  font: 500 8px Outfit, sans-serif;
+}
 
 
 
@@ -854,20 +984,29 @@ nav {
     display: none;
 
   }
+
   .frame .CharacterBack {
     display: none;
 
   }
-  
+
   .frame .Character_phone {
     top: 1500px;
-    left: 280px;
+    left: 50%;
     height: 626px;
     transform: translate(-50%, -50%);
+    filter: grayscale(100%);
     z-index: 1;
     position: absolute;
-}
-
+    display: block;
+  }
+  .frame .Character_phoneBack{
+    display: block;
+    position: absolute;
+    top: 1398px;
+    left: 24%;
+    width: 52%;
+  }
   .NameContainer {
     align-items: center;
     top: 64%;
@@ -916,19 +1055,28 @@ nav {
     left: 0;
     backdrop-filter: blur(5px);
     z-index: 99;
-}
+  }
 
-.frame .SOCIAL  {
-  left: 200px;
-  position: absolute;
-  top: 1750px;
-}
+  .frame .SOCIAL {
+    left: 42%;
+    position: absolute;
+    top: 1750px;
+  }
 
-.frame .Contact svg{
-display: none;
-}
+  .frame .Contact svg {
+    display: none;
+  }
 
-.frame .code_hub {
-display: none;
-}
+  .frame .code_hub {
+    display: none;
+  }
+
+  .phone_button {
+    display: flex;
+    position: relative;
+    top: 1295px;
+  }
+  .Sup{
+    display: none;
+  }
 }

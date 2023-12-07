@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
-body{
-font-family: 'Nico Moji';
+
+body {
+  font-family: 'Nico Moji';
 }
 
 .frame {
@@ -10,20 +11,6 @@ font-family: 'Nico Moji';
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1500px) {
-  .frame{
-    height: 3000px;
-  }
-  .overlap-group{
-    display: none;
-  }
-  .PIE-CHART{
-    display: none;
-  }
-  .OKAY{
-    display: none;
-  }
-}
 
 .frame .overlap {
   position: relative;
@@ -51,7 +38,7 @@ font-family: 'Nico Moji';
 }
 
 .frame .vuesax-linear-setting-wrapper:hover,
-.frame .vuesax-linear-setting-wrapper:focus{
+.frame .vuesax-linear-setting-wrapper:focus {
   background-color: #bbff1a;
 }
 
@@ -73,10 +60,12 @@ font-family: 'Nico Moji';
   border-radius: 24px;
   z-index: 99999;
 }
+
 .frame .vuesax-linear-home-wrapper:hover,
-.frame .vuesax-linear-home-wrapper:focus{
+.frame .vuesax-linear-home-wrapper:focus {
   background-color: #bbff1a;
 }
+
 .frame .rectangle {
   position: absolute;
   width: 100%;
@@ -373,11 +362,11 @@ font-family: 'Nico Moji';
   left: 50%;
   transform: translate(-50%, -50%);
   filter: grayscale(100%);
-  transition: width 0.5s, height 0.5s; 
+  transition: width 0.5s, height 0.5s;
   z-index: 1;
 }
 
-.frame .CharacterBack{
+.frame .CharacterBack {
   position: fixed;
   top: 45%;
   left: 47%;
@@ -385,8 +374,8 @@ font-family: 'Nico Moji';
   height: 10px;
   transform: translate(-50%, -50%);
   filter: grayscale(100%);
-  transition: width 0.5s, height 0.5s; 
-  
+  transition: width 0.5s, height 0.5s;
+
 }
 
 .frame .SOCIAL {
@@ -478,7 +467,8 @@ nav {
   z-index: 99;
 
 }
-.NameContainer{
+
+.NameContainer {
   align-items: center;
   position: absolute;
   top: 64%;
@@ -486,6 +476,7 @@ nav {
   position: fixed;
   z-index: 3;
 }
+
 .Name1 {
   text-align: center;
   color: white;
@@ -510,7 +501,8 @@ nav {
   position: absolute;
   display: flex;
   left: calc(50% - 897px);
-  top: 90%}
+  top: 90%
+}
 
 .Fbutton,
 .Ebutton,
@@ -654,6 +646,7 @@ nav {
   margin: 0 auto;
   top: 210px;
 }
+
 .polygon11 {
   position: relative;
   width: 23px;
@@ -663,6 +656,7 @@ nav {
   z-index: 13;
   border-radius: 2px;
 }
+
 .auto-layer-row {
   position: relative;
   width: 278px;
@@ -670,6 +664,7 @@ nav {
   margin: 58px 0 0 51px;
   z-index: 2;
 }
+
 .frame11 {
   display: flex;
   flex-direction: column;
@@ -683,6 +678,7 @@ nav {
   left: 0;
   z-index: 2;
 }
+
 .number-of-projects {
   align-self: stretch;
   flex-shrink: 0;
@@ -701,6 +697,7 @@ nav {
   text-align: left;
   z-index: 3;
 }
+
 .frame-1 {
   display: flex;
   flex-direction: column;
@@ -713,6 +710,7 @@ nav {
   min-width: 0;
   z-index: 4;
 }
+
 .last-update-time {
   align-self: stretch;
   flex-shrink: 0;
@@ -730,6 +728,7 @@ nav {
   text-align: left;
   z-index: 5;
 }
+
 .november {
   align-self: stretch;
   flex-shrink: 0;
@@ -747,6 +746,7 @@ nav {
   text-align: left;
   z-index: 6;
 }
+
 .image11 {
   position: absolute;
   width: 105px;
@@ -756,6 +756,7 @@ nav {
   background-size: cover;
   z-index: 1;
 }
+
 .rectangle11 {
   position: relative;
   width: 280px;
@@ -765,6 +766,7 @@ nav {
   z-index: 8;
   border-radius: 100px;
 }
+
 .arrow-right {
   position: absolute;
   width: 24px;
@@ -775,6 +777,7 @@ nav {
   background-size: 100% 100%;
   z-index: 11;
 }
+
 .span-25 {
   position: absolute;
   height: 19px;
@@ -791,6 +794,7 @@ nav {
   text-align: left;
   z-index: 12;
 }
+
 .Rectangle11 {
   position: absolute;
   width: 382px;
@@ -801,6 +805,73 @@ nav {
   background-size: cover;
 }
 
-.Sup aos-init aos-animate{
+.Sup aos-init aos-animate {
   left: 10%;
+}
+
+
+
+
+@media only screen and (max-width: 1500px) {
+  .frame {
+    height: 3000px;
+  }
+
+  .frame .overlap-group {
+    position: relative;
+    width: 408px;
+    height: 596px;
+    background-color: #0b0c10;
+    border-radius: 108px;
+    top: 400px;
+    left: -50%;
+  }
+
+  .PIE-CHART {
+    display: none;
+  }
+
+  .OKAY {
+    display: none;
+  }
+
+  .NameContainer {
+    align-items: center;
+    top: 64%;
+    position: absolute;
+    top: 350px;
+    left: 83px;
+    display: flex;
+  }
+
+  .frame .about {
+    position: absolute;
+    width: 212px;
+    height: 56px;
+    top: 500px;
+    left: 83px;
+  }
+
+  .frame .BODY {
+    position: absolute;
+    width: 40%;
+    top: 600px;
+    left: 79px;
+    font-family: "Outfit-Regular", Helvetica;
+    font-weight: 400;
+    color: #999cba;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 32px;
+  }
+
+  .frame .INFO {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    top: 930px;
+    left: 79px;
+  }
 }

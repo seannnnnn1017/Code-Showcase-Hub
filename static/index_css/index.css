@@ -355,10 +355,27 @@ body {
   letter-spacing: 0;
   line-height: 32px;
 }
+.frame .Contact{
+ top: 1500px;
+ position: absolute;
+ left: 44%;
+}
+.frame .Contact svg{
+  position: absolute;
+    top: -400px;
+}
 
+.frame .code_hub {
+  top: -333px;
+  left: 44px;
+  width: 120px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
 .frame .Character {
   position: fixed;
-  top: 45%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: grayscale(100%);
@@ -905,5 +922,13 @@ nav {
   left: 200px;
   position: absolute;
   top: 1750px;
+}
+
+.frame .Contact svg{
+display: none;
+}
+
+.frame .code_hub {
+display: none;
 }
 }

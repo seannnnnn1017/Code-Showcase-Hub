@@ -367,7 +367,7 @@ body {
 }
 
 .frame .Character_phone{
-  display: block;
+  display: none;
 }
 
 .frame .CharacterBack {
@@ -461,12 +461,11 @@ body {
 
 nav {
   position: fixed;
-  width: 700px;
-  height: 120px;
+  width: 70%;
+  height: 100px;
   top: 0;
   left: 0;
   backdrop-filter: blur(5px);
-  /* ?��ҽk�{�סA�i�H���u�ݭn�ק�?�� */
   z-index: 99;
 
 }

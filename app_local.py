@@ -17,6 +17,11 @@ def index():
 def test():
     return render_template('test.html')
 
+@app.route('/D1_min')
+def D1_min():
+    return render_template('D1_min.html')
+
+
 
 
 if __name__=="__main__":

@@ -1,0 +1,1 @@
+{"inputUnits":[48,48,4],"outputUnits":2,"inputs":{"image":{"dtype":"array","min":0,"max":255}},"outputs":{"label":{"dtype":"string","min":0,"max":1,"uniqueValues":["no_mask","mask"],"legend":{"no_mask":[1,0],"mask":[0,1]}}},"isNormalized":true}

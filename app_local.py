@@ -21,6 +21,10 @@ def test():
 def mask_larn():
     return render_template('mask_larn.html')
 
+@app.route('/mask')
+def mask():
+    return render_template('mask.html')
+
 
 
 

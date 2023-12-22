@@ -22,11 +22,11 @@ function drawGUI(){
     snapshotW, snapshotH
   );
   // SVG 圖檔來源為：https://www.svgrepo.com/
-  guiImgButton('static/D1_larn/assets/mask01.svg', 20, 20, 70, addLabel1Data);
-  guiImgButton('static/D1_larn/assets/mask02.svg', 100, 20, 70, addLabel2Data);
-  guiImgButton('static/D1_larn/assets/brain.svg', 180, 20, 70, trainModel);
-  guiImgButton('static/D1_larn/assets/download.svg', 260, 20, 70, downloadModel);
-  guiImgButton('static/D1_larn/assets/upload.svg', 340, 20, 70, uploadModel);
+  guiImgButton('static/mask/assets/mask01.svg', 20, 20, 70, addLabel1Data);
+  guiImgButton('static/mask/assets/mask02.svg', 100, 20, 70, addLabel2Data);
+  guiImgButton('static/mask/assets/brain.svg', 180, 20, 70, trainModel);
+  guiImgButton('static/mask/assets/download.svg', 260, 20, 70, downloadModel);
+  guiImgButton('static/mask/assets/upload.svg', 340, 20, 70, uploadModel);
 }
 
 function setup() {
@@ -141,9 +141,9 @@ function downloadModel() {
 //----------上傳模型----------
 function uploadModel() {
   const modelInfo = {
-    model: 'static/D1_larn/model/model.json',
-    metadata: 'static/D1_larn/model/model_meta.json',
-    weights: 'static/D1_larn/model/model.weights.bin',
+    model: 'static/mask/model/model.json',
+    metadata: 'static/mask/model/model_meta.json',
+    weights: 'static/mask/model/model.weights.bin',
   };
   CNN.load(modelInfo, modelLoaded);
 }

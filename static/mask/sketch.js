@@ -9,9 +9,6 @@ let snapshotH = 30;       // 縮圖高度
 let snapshotY = 500;      // 縮圖水平位置
 let labels = ['no_mask', 'mask'];  // 訓練標籤
 
-let host="test.mosquitto.org";
-let port=1883;
-
 uploadModel();
 
 function drawGUI(){
@@ -37,7 +34,7 @@ function setup() {
   };
   CNN = ml5.neuralNetwork(options);
   uploadModel();
-
+  setInterval(sendMQTTMessage, 2000);
 }
 
 function draw() {
@@ -53,16 +50,48 @@ function draw() {
   } else {
     tint(255);
   }
+
 }
 
 function sendMQTTMessage() {
-  // 檢查特定條件並根據結果發送 MQTT 訊息
+  // 檢查特定條件並根據結果執行相應的動作
   if (predictLabel == labels[0]) {
-    var message = new Paho.MQTT.Message("999");
-    message.destinationName = "op23756778";
-    client.send(message);
+    message = 999;
+  } else {
+    message = 0;
   }
+  // 建立一個新的 XMLHttpRequest 物件
+  var xhr = new XMLHttpRequest();
+
+  // 設定 POST 請求的 URL
+  var url = './receive';
+
+  // 設定請求的方法和 URL
+  xhr.open('POST', url);
+
+  // 設定請求的標頭
+  xhr.setRequestHeader('Content-Type', 'application/json');
+
+  // 監聽請求狀態的改變
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      // 請求成功，處理返回的資料
+      console.log('Message sent successfully.');
+    } else {
+      // 請求失敗，處理錯誤
+      console.error('Failed to send message. Status: ' + xhr.status);
+    }
+  };
+
+  // 將 message 資料轉換為 JSON 字串
+  var data = JSON.stringify({ message: message });
+
+  // 發送請求
+  xhr.send(data);
 }
+
+
+
 
 
 

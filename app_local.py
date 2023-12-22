@@ -26,6 +26,9 @@ def mask():
     return render_template('mask.html')
 
 
+@app.route('/mqtt')
+def mqtt():
+    return render_template('mqtt.html')
 
 
 if __name__=="__main__":

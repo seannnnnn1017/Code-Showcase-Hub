@@ -17,11 +17,18 @@ def index():
 def test():
     return render_template('test.html')
 
-@app.route('/D1_min')
-def D1_min():
-    return render_template('D1_min.html')
+@app.route('/mask_larn')
+def mask_larn():
+    return render_template('mask_larn.html')
+
+@app.route('/mask')
+def mask():
+    return render_template('mask.html')
 
 
+@app.route('/mqtt')
+def mqtt():
+    return render_template('mqtt.html')
 
 
 if __name__=="__main__":

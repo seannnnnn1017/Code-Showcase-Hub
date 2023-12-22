@@ -9,24 +9,16 @@ let snapshotH = 30;       // 縮圖高度
 let snapshotY = 500;      // 縮圖水平位置
 let labels = ['no_mask', 'mask'];  // 訓練標籤
 
+let host="test.mosquitto.org";
+let port=1883;
+
+uploadModel();
+
 function drawGUI(){
   // 建立下方放置縮圖的兩條縮圖列
-  snapshotBars.addBar(
-    snapshotY,           // 縮圖列水平位置
-    255, 204, 100,       // 縮圖列底色
-    snapshotW, snapshotH // 縮圖寬、高
-  );
-  snapshotBars.addBar(
-    snapshotY + 80, 
-    150, 255, 150, 
-    snapshotW, snapshotH
-  );
   // SVG 圖檔來源為：https://www.svgrepo.com/
-  guiImgButton('static/mask/assets/mask01.svg', 20, 20, 70, addLabel1Data);
-  guiImgButton('static/mask/assets/mask02.svg', 100, 20, 70, addLabel2Data);
-  guiImgButton('static/mask/assets/brain.svg', 180, 20, 70, trainModel);
-  guiImgButton('static/mask/assets/download.svg', 260, 20, 70, downloadModel);
-  guiImgButton('static/mask/assets/upload.svg', 340, 20, 70, uploadModel);
+  guiImgButton('static/mask/assets/upload.png', 657, 20, 70, uploadModel);
+  
 }
 
 function setup() {
@@ -44,34 +36,35 @@ function setup() {
     debug: true,
   };
   CNN = ml5.neuralNetwork(options);
+  uploadModel();
+
 }
 
 function draw() {
+  // 在視訊畫面上繪製影像
   image(video, 0, 0, videoSizeW, videoSizeH);
-  //畫出計次器     圓心 |半徑|   填色    |字體大小                  
-  drawCircledNum( 55, 90, 48, 34, 58, 127, 30,
-                 // 顯示數值           |偏移距離
-                 snapshotBars.count(0), 0, 4);
-  drawCircledNum(135, 90, 48, 235, 96, 23, 30, snapshotBars.count(1), 0, 4);
-  
-  // 沒戴口罩
+
+  // 檢查特定條件並根據結果執行相應的動作
   if (predictLabel == labels[0]) {
     fill(255, 255, 255);
     textSize(72);
-    text("請戴上口罩！", width / 2, height / 3)
+    text("請戴上口罩！", width / 3, height / 3);
     tint(255, 20, 150);
+  } else {
+    tint(255);
   }
-  // 恢復顏色
-  else {
-    tint(255);    
-  } 
 }
 
-// 增加資料
-function addLabelData(n) {
-  addSample(labels[n]);
-  snapshotBars.addSnapshot(video.get(), n);
+function sendMQTTMessage() {
+  // 檢查特定條件並根據結果發送 MQTT 訊息
+  if (predictLabel == labels[0]) {
+    var message = new Paho.MQTT.Message("999");
+    message.destinationName = "op23756778";
+    client.send(message);
+  }
 }
+
+
 
 // 增加標籤 1 資料(沒有口罩)
 function addLabel1Data() {

@@ -28,7 +28,7 @@ def test():
 
 @app.route('/mask_larn')
 def mask_larn():
-    return render_template('mask_larn.html')
+    return render_template('mask_larn.html') 
 
 @app.route('/mask')
 def mask():
@@ -43,6 +43,9 @@ def receive_message():
     publish.single(topic, message, hostname=broker_address, port=port)
     return 'Message received successfully.', 200
 
+@app.route('/computer_visual')
+def CP():
+    return render_template('computer_visual.html')
 if __name__=="__main__":
     app.run(debug=True)
 

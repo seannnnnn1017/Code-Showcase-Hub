@@ -5,6 +5,7 @@ from pymongo import MongoClient
 from datetime import timedelta
 import requests
 
+
 #MQTT
 import paho.mqtt.publish as publish
 
@@ -28,7 +29,7 @@ def test():
 
 @app.route('/mask_larn')
 def mask_larn():
-    return render_template('mask_larn.html')
+    return render_template('mask_larn.html') 
 
 @app.route('/mask')
 def mask():
@@ -43,6 +44,17 @@ def receive_message():
     publish.single(topic, message, hostname=broker_address, port=port)
     return 'Message received successfully.', 200
 
+@app.route('/computer_visual')
+def CP():
+    return render_template('computer_visual.html')
+
+@app.route('/update_counter', methods=['POST'])
+def update_counter():
+    data = request.get_json()
+    value = data.get('value')
+    # Process the value as needed
+    print('Received value:', value)
+    return 'Value received successfully'
 if __name__=="__main__":
     app.run(debug=True)
 

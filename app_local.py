@@ -5,6 +5,7 @@ from pymongo import MongoClient
 from datetime import timedelta
 import requests
 
+
 #MQTT
 import paho.mqtt.publish as publish
 
@@ -46,6 +47,14 @@ def receive_message():
 @app.route('/computer_visual')
 def CP():
     return render_template('computer_visual.html')
+
+@app.route('/update_counter', methods=['POST'])
+def update_counter():
+    data = request.get_json()
+    value = data.get('value')
+    # Process the value as needed
+    print('Received value:', value)
+    return 'Value received successfully'
 if __name__=="__main__":
     app.run(debug=True)
 

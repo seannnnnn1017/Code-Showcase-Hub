@@ -10,11 +10,12 @@ import requests
 import paho.mqtt.publish as publish
 
 # Define the MQTT broker address and port
-broker_address = "test.mosquitto.org"
+broker_address = "io.adafruit.com"
 port = 1883
-
+username='op23756778'
+password='aio_UCJy96adfLWqDN8bLFQsXjlhfkUX'
 # Define the topic to subscribe to
-topic = "op23756778"
+topic = 'op23756778/feeds/visitors'
 
 app = Flask(__name__)
 
@@ -41,7 +42,7 @@ def receive_message():
     message = data['message']
     # 根據 message 的值執行相應的操作
     print('Received message:', message)
-    publish.single(topic, message, hostname=broker_address, port=port)
+    publish.single(topic, message, hostname=broker_address, port=port, auth={'username': username, 'password': password})
     return 'Message received successfully.', 200
 
 @app.route('/computer_visual')

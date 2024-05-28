@@ -134,7 +134,7 @@ function setup() {
   document.body.appendChild(rightCounterElement); // 將該元素添加到頁面的 body 中
 
   // 創建用於顯示由左到右的人流量計數器的元素
-  let leftToRightCounterElement = document.createElement('div'); // 創建一個 div 元素
+  let leftToRightCounterElement = document.createElement('h1'); // 創建一個 div 元素
   leftToRightCounterElement.id = 'Counter'; // 設置該元素的 id 屬性為 'leftToRightCounter'
   leftToRightCounterElement.innerText = '0'; // 設置該元素的文本內容為 '0'
   document.body.appendChild(leftToRightCounterElement); // 將該元素添加到頁面的 body 中
@@ -142,12 +142,15 @@ function setup() {
 }
 
 function draw() {
-  // 在每一幀更新時運行的函數，用於繪製畫面
-  image(video, 0, 0); // 將視頻捕獲元素的內容繪製到畫布上
+
+  translate(video.width, 0); 
+  scale(-1, 1);
+  image(video, 0, 0); 
   
-  // 繪製中線
-  stroke(255); // 設置線條顏色為白色
-  strokeWeight(2); // 設置線條粗細
-  line(video.width / 2, 0, video.width / 2, video.height); // 繪製垂直中線
+
+  stroke(255); 
+  strokeWeight(2);
+  line(video.width / 2, 0, video.width / 2, video.height); 
 }
+
 
